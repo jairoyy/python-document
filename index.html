@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Documentation</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon"  type="favicon" href="img/icons8.png">
+
+        <style>
+          /* Add your CSS styles here */
+          body {
+              font-family: Arial, sans-serif;
+          }
+  
+          #myBtn {
+              display: none; /* Hidden by default */
+              position: fixed; /* Stay in place */
+              bottom: 20px; /* 20px from the bottom */
+              right: 30px; /* 30px from the right */
+              z-index: 99; /* Make sure it does not overlap */
+              border: none; /* Remove borders */
+              outline: none; /* Remove outline */
+              background-color: #007BFF; /* Blue background */
+              color: white; /* White text */
+              padding: 15px; /* Some padding */
+              border-radius: 4px; /* Rounded corners */
+              cursor: pointer; /* Pointer/hand icon */
+          }
+  
+          #myBtn:hover {
+              background-color: #0056b3; /* Darker blue on hover */
+          }
+  
+          /* Responsive styles */
+          @media screen and (max-width: 600px) {
+              #myBtn {
+                  padding: 10px;
+                  font-size: 14px;
+              }
+          }
+      </style>
+    </head>
+
+
+
+<body>
+    
+    <main id="main-doc">
+
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+      
+     <nav id="navbar">
+      <header id="header">Python</header>
+      <ul>
+       <li> <a href="#introduction" class="nav-link"> INTRODUCTION: </a> </li>
+       <li> <a href="#elonmusk" class="nav-link">  Features of Python </a> </li>
+       <li> <a href="#rudolfdiesel" class="nav-link">  Basic io's:</a> </li>
+       <li> <a href="#henryford" class="nav-link">   </a></li>
+       <li> <a href="#karlbenz" class="nav-link">   </a> </li>
+       <li> <a href="#henryroyce" class="nav-link">    </a> </li>
+       <li> <a href="#wobently" class="nav-link">   </a> </li>
+       <li> <a href="#enzoferrari" class="nav-link">   </a> </li>
+      
+       <li> <a href="#reference" class="nav-link">  </a> </li>
+     </ul>
+    </nav>
+
+      <section class="main-section" id="introduction"> 
+      
+    
+        <h1> Introduction </h1>
+        <p> Python is developed by Guido van Rossum. 
+          Guido van Rossum started implementing Python in 1989. released in 1991.
+          Python is a very simple programming language so even if you are new to programming, you can learn python without facing any issues.
+     
+     Interesting fact: Python is named after the comedy television show Monty Python’s Flying Circus.</p>
+   </section>
+
+     <section class="main-section" id="elonmusk">
+  
+    
+       <header> Features of Python </header>
+       
+       
+
+       <ul>
+        <li>1. Readable: Python is a very readable language.
+        </li>
+        <li>2. Easy to Learn: Learning python is easy as this is a expressive and high level programming language, 
+          which means it is easy to understand the language and thus easy to learn.</li>
+        <li>3. Cross platform: Python is available and can run on various operating systems such as Mac, Windows, Linux, Unix etc. 
+          This makes it a cross platform and portable language.</li>
+        <li>4. Open Source: Python is a open source programming language.</li>
+
+        <li>
+          5. Large standard library: Python comes with a large standard library that has some handy codes and functions which we can use while writing code in Python.</li>
+        <li>6. Free: Python is free to download and use. 
+          This means you can download it for free and use it in your application. See: Open Source Python License.
+           Python is an example of a FLOSS (Free/Libre Open Source Software), which means you can freely distribute copies of this software, read its source code and modify it.</li>
+        <li>7. Supports exception handling: If you are new, you may wonder what is an exception? 
+          An exception is an event that can occur during program exception and can disrupt the normal flow of program. 
+          Python supports exception handling which means we can write less error prone code and can test various scenarios that can cause an exception later on.</li>
+        <li>8. Advanced features: Supports generators and list comprehensions. We will cover these features later.</li>
+        <li>9. Automatic memory management: Python supports automatic memory management which means the memory is cleared
+          and freed automatically. You do not have to bother clearing the memory.</li>
+
+
+       </ul>
+       <p>
+        USES:
+
+        1. Web development – Web framework like Django and Flask are based on Python. 
+        They help you write server side code which helps you manage database, write backend programming logic, mapping urls etc.
+        
+        2. Machine learning – There are many machine learning applications written in Python. 
+                Machine learning is a way to write a logic so that a machine can learn and solve a particular problem on its own.
+               For example, products recommendation in websites like Amazon, Flipkart,  etc. is a machine learning algorithm that recognises user’s interest. 
+              Face recognition and Voice recognition in your phone is another example of machine learning.
+        
+        3. Data Analysis – Data analysis and data visualisation in form of charts can also be developed using Python.
+        
+        4. Scripting – Scripting is writing small programs to automate simple tasks such as sending automated response emails etc. 
+        Such type of applications can also be written in Python programming language.
+        
+        5. Game development – You can develop games using Python.
+        
+        6. You can develop Embedded applications in Python.
+        
+        7. Desktop applications – You can develop desktop application in Python using library like TKinter or QT.
+    </p>
+    <br>
+    <p>Modes of python:
+      1.interactive mode
+           [>>>]single line of code
+       2.script mode</p>
+  
+    </section>
+
+    <section class="main-section" id="rudolfdiesel">
+      
+      <header>Printing the statement:</header>
+      <p>We use the widely used print() statement to display some data on the screen.
+   
+        We can output the particular data on some device(screen) or even in some file.
+   
+        While writing real-world programs, we have to write statements that explicitly output numbers and strings.</p>
+        <br>
+        <p>Example:
+          print("Welcome to race. In this , we will learn about new things")</p>
+
+          <br>
+          <code>
+            Output:
+
+            Welcome to race.In this, we will learn about new things
+          </code>
+
+
+
+          <header>user Input:</header>
+          <p>
+            We would want to take input from the user and then print some results back.
+            We can achieve this using the input() function and print function respectively.
+          </p>
+          <code>
+            Syntax:
+                 input(prompt)
+          </code>
+
+          <p><b>Example:</b>
+            Use the prompt parameter to write a message before the input:</p>
+        
+          <code>x = input('Enter your name:')</code>
+          <br>
+          <code>print('Hello, ' + x)</code>
+          <br>
+          <code>a=int(input(enter the value of a))</code>
+          <br>
+          <code>b=int(input(enter the value of b))</code>
+          <br>
+          <code>c=a+b</code>
+          <br>
+            <code>print(c)</code>
+ 
+    </section>
+   
+<!--     
+   <section class="main-section" id="henryford">
+   
+      <header> Henry Ford </header>
+
+      <ul>
+        <li><b>Born:</b> July 30, 1863</li>
+        <li><b>Birthplace:</b> Greenfield Township, Michigan, USA</li>
+        <li><b>Died:</b> April 7, 1947 (aged 83)</li>
+        <li><b>Biography</b></li>
+       </ul>
+      <p>  
+        Henry Ford introduced the Model T Ford automobile in October 1908, the world's first mass-produced car. In producing an automobile for the middle classes instead of just for the wealthy, Henry Ford help change American society forever.
+
+        Prior to this Ford had spent many years perfecting different engines and models, including leaving an original company bearing his name that later became the Cadillac Automotive Company.
+        
+        The Model T went on to sell over 15 million units. Ford was able to achieve this by developing his car assembly line through mass production, the first significant industrialist to do so.
+        
+        Henry Ford is also remembered for establishing a minimum wage of $5 a day in 1914, raising the daily rate from $2.34 for most workers. It was a sensational move at the time aimed at acquiring and retaining the best workforce.
+        
+        In later life Henry Ford rested on his laurels and when he didn't adapt the Model T to customers wants he was overtaken by competitors before releasing the updated Model A in 1927.
+        
+        A man of often conflicting character, Ford is also remembered for his pacifism during World War I and his promotion of antisemitic views.
+        </p> 
+    </section>
+   
+  
+   <section class="main-section" id="karlbenz">
+    <div class="box">
+          <div class="imgBx">
+            <img src="img/karl-benz.jpg">
+           </div>
+         </div>
+      <header>Karl Benz </header>
+      <ul>
+        <li><b>Born:</b>  November 25, 1844</li>
+        <li><b>Birthplace:</b> Karlsruhe, Baden-Württemberg, Germany</li>
+        <li><b>Died:</b> April 4, 1929 (aged 84)</li>
+        <li><b>Biography</b></li>
+       </ul>
+      <p> Karl Benz was a German engine designer and engineer, regarded as the inventor of the first automobile powered by an internal combustion engine.
+
+        While contemporaries of Benz, Gottlieb Daimler and Wilhelm Maybach were working on similar engines at the same time, it was Benz who received a patent for his work first. Subsequently Benz would go on to patent all the processes necessary to make the internal combustion engine feasible for use in an automobile.
+        
+        Benz along with his wife Bertha went on to found the Mercedes-Benz company to commercialize this technology. It is now one of the world's leading luxury car brands. </p>
+    </section>
+   
+     <section class="main-section" id="henryroyce">
+      <div class="box">
+        <div class="imgBx">
+          <img src="img/henry-royce.jpg">
+         </div>
+       </div>
+      <header> Henry Royce </header>
+      <ul>
+        <li><b>Born:</b>  March 27, 1863</li>
+        <li><b>Birthplace:</b>  Alwalton, England, United Kingdom</li>
+        <li><b>Died:</b> April 22, 1933 (aged 70)</li>
+        <li><b>Biography</b></li>
+       </ul>
+      <p>
+        Co-founder of car manufacturing and aerospace firm Rolls-Royce Limited with Charles Rolls. </p>
+        <div class="box">
+          <div class="imgBx">
+            <img src="img/charles-rolls.jpg">
+           </div>
+         </div>
+        <header>Charles Rolls</header>
+        <ul>
+          <li><b>Born:</b>  August 27, 1877</li>
+          <li><b>Birthplace:</b>  London, England, United Kingdom</li>
+          <li><b>Died:</b> July 12, 1910 (aged 32)</li>
+          <li><b>Biography</b></li>
+         </ul>
+         <p>Co-founder of car manufacturing firm Rolls-Royce with Henry Royce.</p>
+    </section>
+    
+      <section class="main-section" id="wobently">
+        <div class="box">
+          <div class="imgBx">
+            <img src="img/w-o-bentley.jpg">
+           </div>
+         </div>
+     <header> W. O. Bentley </header>
+     <ul>
+      <li><b>Born:</b>  September 16, 1888</li>
+      <li><b>Birthplace:</b>  London, England, United Kingdom</li>
+      <li><b>Died:</b> August 13, 1971 (aged 82)</li>
+      <li><b>Biography</b></li>
+     </ul>
+      <p> 
+        Founder of Bentley Motors Limited in London which he later sold to Rolls Royce.
+        </p>
+    </section>
+
+    <section class="main-section" id="enzoferrari">
+      <div class="box">
+        <div class="imgBx">
+          <img src="img/enzo-ferrari.jpg">
+         </div>
+       </div>
+      <header> Enzo Ferrari </header>
+      <ul>
+        <li><b>Born:</b>  February 18, 1898</li>
+        <li><b>Birthplace:</b>  Modena, Italy</li>
+        <li><b>Died:</b> August 14, 1988 (aged 90)</li>
+        <li><b>Biography</b></li>
+       </ul>
+
+       <p> 
+        Enzo Ferrari was an Italian motor racing driver and entrepreneur, best known for founding the Scuderia Ferrari Grand Prix motor racing team and then the Ferrari automobile brand.
+
+Ferrari began his automobile career as a test-driver for a car manufacturer that rebuilt secondhand truck bodies into small passenger cars. He managed to rise from this position to become a race car driver, making his competitive debut in 1919. He then joined Alfa Romeo in 1920, winning his first Grand Prix at Ravenna in 1923.
+
+After the deaths of fellow drivers Ugo Sivocci and Antonio Ascari, and with the birth of his son Alfredo, Ferrari retired from racing and shift to management and development within Alfa Romeo. This position allowed him to build a team of drivers, including Giuseppe Campari and Tazio Nuvolari, with which he founded the Scuderia Ferrari team at Alfa Romeo.
+
+Ferrari ultimately founded Ferrari S.p.A in 1947 after leaving Alfa Romeo and starting his own automobile parts company. He then took his new machines back to the racetrack, determined to compete against Alfa Romeo and Mercedes. Success came at least when José Froilán González won at Silverstone in 1951.
+         </p>
+     </section>
+    
+       <section class="main-section" id="reference">
+      <header> Reference</header>
+      <p> 
+        <ul> <li> All the documentation in this page is taken from <a href="https://www.onthisday.com/" class="referral-link"> On This Day </a></li> </ul>
+        </p>
+    </section> -->
+
+    
+  </main>
+
+  <script>
+    // Get the button
+    let mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+        scrollFunction();
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+    }
+</script>
+  
+</body>
+
+    
+</html>
