@@ -119,7 +119,13 @@
       }
     }
     
-    
+    .command{
+
+           background-color:black;
+        color:white;
+    }
+
+        
     .main-section .box {
   position: relative;
   width: 250px;
