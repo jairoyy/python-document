@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Documentation</title>
         <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.jsdelivr.net/npm/skulpt@1.0.0/dist/skulpt.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/skulpt@1.0.0/dist/skulpt-stdlib.js"></script>
         <link rel="icon"  type="favicon" href="img/icons8.png">
 
         <style>
@@ -39,6 +41,58 @@
                   font-size: 14px;
               }
           }
+          
+
+          .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        textarea {
+            width: 100%;
+            height: 200px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 10px;
+            font-size: 16px;
+            resize: none;
+        }
+        .but{
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        #output, #error {
+            white-space: pre-wrap;
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        #output {
+            background-color: #e9ffe9;
+            border: 1px solid #c3e6cb;
+        }
+        #error {
+            background-color: #ffe9e9;
+            border: 1px solid #f5c6cb;
+            color: #721c24;
+        }
+
+
+
+            
       </style>
     </head>
 
@@ -57,12 +111,12 @@
        <li> <a href="#elonmusk" class="nav-link">  Features of Python </a> </li>
        <li> <a href="#rudolfdiesel" class="nav-link">  Basic io's:</a> </li>
        <li> <a href="#henryford" class="nav-link">Variables</a></li>
-       <li> <a href="#karlbenz" class="nav-link">   </a> </li>
-       <li> <a href="#henryroyce" class="nav-link">    </a> </li>
-       <li> <a href="#wobently" class="nav-link">   </a> </li>
-       <li> <a href="#enzoferrari" class="nav-link">   </a> </li>
+       <li> <a href="#karlbenz" class="nav-link">User Input Operators</a> </li>
+       <li> <a href="#henryroyce" class="nav-link">User Input Assignment</a> </li>
+       <li> <a href="#wobently" class="nav-link"> User Input  Comparsion</a> </li>
+       <li> <a href="#enzoferrari" class="nav-link"> Control Statements & User input control</a> </li>
       
-       <li> <a href="#reference" class="nav-link">  </a> </li>
+       <li> <a href="#if" class="nav-link">  </a> </li>
      </ul>
     </nav>
 
@@ -236,105 +290,357 @@
     </section>
    
   
- <!--  <section class="main-section" id="karlbenz">
-    <div class="box">
-          <div class="imgBx">
-            <img src="img/karl-benz.jpg">
-           </div>
-         </div>
-      <header>Karl Benz </header>
-      <ul>
-        <li><b>Born:</b>  November 25, 1844</li>
-        <li><b>Birthplace:</b> Karlsruhe, Baden-Württemberg, Germany</li>
-        <li><b>Died:</b> April 4, 1929 (aged 84)</li>
-        <li><b>Biography</b></li>
-       </ul>
-      <p> Karl Benz was a German engine designer and engineer, regarded as the inventor of the first automobile powered by an internal combustion engine.
+  <section class="main-section" id="karlbenz">
+    <header>User Input Operators</header>
+    
+   <p>  
+     <b>Examples</b>
+     </p>
 
-        While contemporaries of Benz, Gottlieb Daimler and Wilhelm Maybach were working on similar engines at the same time, it was Benz who received a patent for his work first. Subsequently Benz would go on to patent all the processes necessary to make the internal combustion engine feasible for use in an automobile.
-        
-        Benz along with his wife Bertha went on to found the Mercedes-Benz company to commercialize this technology. It is now one of the world's leading luxury car brands. </p>
+      <code>a=int(input("a ="))</code><br>
+     <code>b=int(input("b ="))</code><br>
+     <code>z = a + b</code><br>
+     <code>print("Ans:", z)</code><br>
+
+<br>
+      <div class="container">
+        <h1>Online Python Compiler</h1>
+        <textarea id="code" placeholder="Write your Python code here..."></textarea>
+        <button  class="but" id="runBtn">Run Code</button>
+        <div id="output"></div>
+        <div id="error"></div>
+    </div>
+
+
+    <br>
+
+    <code>a=int(input("a ="))</code><br>
+    <code>b=int(input("b ="))</code><br>
+    <code>c= a - b</code><br>
+    <code>print ("Subtraction of two integers:")</code><br>
+    <code>print ("a-b =",c)</code><br>
+      <code>print ("b-a =",c)</code><br>
+
+<br>
+     <div class="container">
+       <h1>Online Python Compiler</h1>
+       <textarea id="code" placeholder="Write your Python code here..."></textarea>
+       <button  class="but" id="runBtn">Run Code</button>
+       <div id="output"></div>
+       <div id="error"></div>
+   </div>
+
+    <br>
+
+    <code>a=int(input("a ="))</code><br>
+    <code>b=int(input("b ="))</code><br>
+    <code>c= a - b</code><br>
+    <code>print ("Subtraction of two integers:")</code><br>
+    <code>print ("a-b =",c)</code><br>
+      <code>print ("b-a =",c)</code><br>
+
+<br>
+     <div class="container">
+       <h1>Online Python Compiler</h1>
+       <textarea id="code" placeholder="Write your Python code here..."></textarea>
+       <button  class="but" id="runBtn">Run Code</button>
+       <div id="output"></div>
+       <div id="error"></div>
+   </div>
+
+
+
+   <br>
+
+   <code>a=int(input("a ="))</code><br>
+   <code>b=int(input("b ="))</code><br>
+   <code>c=a*b</code><br>
+   <code>print ("Multiplication of two integers")</code><br>
+   <code>print ("a*b =",c)</code><br>
+     <code>print ("b*a =",c)</code><br>
+
+<br>
+    <div class="container">
+      <h1>Online Python Compiler</h1>
+      <textarea id="code" placeholder="Write your Python code here..."></textarea>
+      <button  class="but" id="runBtn">Run Code</button>
+      <div id="output"></div>
+      <div id="error"></div>
+  </div>
+
+
+  <br>
+
+   <code>a=int(input("a ="))</code><br>
+   <code>b=int(input("b ="))</code><br>
+   <code>c=a/b</code><br>
+   <code>z=b/a</code><br>
+   <code>print ("Division of two integers")</code><br>
+   <code>print ("a/b=",c)</code><br>
+     <code>print ("b/a=",z)</code><br>
+
+<br>
+    <div class="container">
+      <h1>Online Python Compiler</h1>
+      <textarea id="code" placeholder="Write your Python code here..."></textarea>
+      <button  class="but" id="runBtn">Run Code</button>
+      <div id="output"></div>
+      <div id="error"></div>
+  </div>
+
+
+  
+  <br>
+
+   <code>a=int(input("a ="))</code><br>
+   <code>b=int(input("b ="))</code><br>
+   <code>c=a%b</code><br>
+   <code>z=b%a</code><br>
+   <code>print ("a%b=",c)</code><br>
+     <code>print ("b%a=",z)</code><br>
+
+<br>
+    <div class="container">
+      <h1>Online Python Compiler</h1>
+      <textarea id="code" placeholder="Write your Python code here..."></textarea>
+      <button  class="but" id="runBtn">Run Code</button>
+      <div id="output"></div>
+      <div id="error"></div>
+  </div>
+
+
+
+
+
     </section>
    
      <section class="main-section" id="henryroyce">
-      <div class="box">
-        <div class="imgBx">
-          <img src="img/henry-royce.jpg">
-         </div>
-       </div>
-      <header> Henry Royce </header>
-      <ul>
-        <li><b>Born:</b>  March 27, 1863</li>
-        <li><b>Birthplace:</b>  Alwalton, England, United Kingdom</li>
-        <li><b>Died:</b> April 22, 1933 (aged 70)</li>
-        <li><b>Biography</b></li>
-       </ul>
-      <p>
-        Co-founder of car manufacturing and aerospace firm Rolls-Royce Limited with Charles Rolls. </p>
-        <div class="box">
-          <div class="imgBx">
-            <img src="img/charles-rolls.jpg">
-           </div>
-         </div>
-        <header>Charles Rolls</header>
-        <ul>
-          <li><b>Born:</b>  August 27, 1877</li>
-          <li><b>Birthplace:</b>  London, England, United Kingdom</li>
-          <li><b>Died:</b> July 12, 1910 (aged 32)</li>
-          <li><b>Biography</b></li>
-         </ul>
-         <p>Co-founder of car manufacturing firm Rolls-Royce with Henry Royce.</p>
-    </section>
+
+      <header>User Input Assignment </header>
     
-      <section class="main-section" id="wobently">
-        <div class="box">
-          <div class="imgBx">
-            <img src="img/w-o-bentley.jpg">
-           </div>
-         </div>
-     <header> W. O. Bentley </header>
-     <ul>
-      <li><b>Born:</b>  September 16, 1888</li>
-      <li><b>Birthplace:</b>  London, England, United Kingdom</li>
-      <li><b>Died:</b> August 13, 1971 (aged 82)</li>
-      <li><b>Biography</b></li>
-     </ul>
-      <p> 
-        Founder of Bentley Motors Limited in London which he later sold to Rolls Royce.
+      <p>  
+        <b>Examples</b>
         </p>
+   
+         <code>a=int(input("a ="))</code><br>
+        <code>b=int(input("b ="))</code><br>
+        <code>a=a+b</code><br>
+        <code>print(a)</code><br>
+
+
+
+        <br>
+
+        <code>a=int(input("a ="))</code><br>
+        <code>b=int(input("b ="))</code><br>
+        <code>a=a-b</code><br>
+        <code>print(a)</code><br>
+   
+   <br>
+       
+ 
+       <code>a=int(input("a ="))</code><br>
+       <code>b=int(input("b ="))</code><br>
+       <code>a=a*b</code><br>
+       <code>print(a)</code><br>
+  
+  <br>
+
+  <br>
+
+  <code>a=int(input("a ="))</code><br>
+  <code>b=int(input("b ="))</code><br>
+  <code>b=a/b</code><br>
+  <code>print(a)</code><br>
+
+<br>
+ 
+
+ <code>a=int(input("a ="))</code><br>
+ <code>b=int(input("b ="))</code><br>
+ <code>a=a%b</code><br>
+ <code>print(a)</code><br>
+
+<br>
+   
+   <br>
+         <div class="container">
+           <h1>Online Python Compiler</h1>
+           <textarea id="code" placeholder="Write your Python code here..."></textarea>
+           <button  class="but" id="runBtn">Run Code</button>
+           <div id="output"></div>
+           <div id="error"></div>
+           </div>
+
+     
     </section>
+
+    <!-- <section class="main-section" id="wobently">
+      
+      <header>User Input  Comparsion</header>
+    
+      <p>  
+        <b>Examples</b>
+        </p>
+   
+         <code>a=int(input("a="))</code><br>
+        <code>b=int(input("b="))</code><br>
+        <code>print ( "a>b is", a>b)</code><br>
+        <code>print ("a<b is",a<b)</code><br>
+        <code>a=a+b</code><br>
+        <code>print(a)</code><br>
+        <code>a=a+b</code><br>
+        <code>print(a)</code><br>
+        <code>a=a+b</code><br>
+        <code>print(a)</code><br> -->
+
+
+
+<!-- 
+        # a=int(input("a="))
+# b=int(input("b=99"))
+# print ( "a>b is", a>b)
+# print ("a<b is",a<b)
+# print ("a==b is",a==b)
+# print ("a!=b is",a!=b)
+# print ("a!=b is",a>=b)
+# print ("a!=b is",a<=b) -->
+
+        <!-- <br>
+        <div class="container">
+          <h1>Online Python Compiler</h1>
+          <textarea id="code" placeholder="Write your Python code here..."></textarea>
+          <button  class="but" id="runBtn">Run Code</button>
+          <div id="output"></div>
+          <div id="error"></div>
+          </div>
+
+
+
+    </section> -->
 
     <section class="main-section" id="enzoferrari">
-      <div class="box">
-        <div class="imgBx">
-          <img src="img/enzo-ferrari.jpg">
-         </div>
-       </div>
-      <header> Enzo Ferrari </header>
-      <ul>
-        <li><b>Born:</b>  February 18, 1898</li>
-        <li><b>Birthplace:</b>  Modena, Italy</li>
-        <li><b>Died:</b> August 14, 1988 (aged 90)</li>
-        <li><b>Biography</b></li>
-       </ul>
-
-       <p> 
-        Enzo Ferrari was an Italian motor racing driver and entrepreneur, best known for founding the Scuderia Ferrari Grand Prix motor racing team and then the Ferrari automobile brand.
-
-Ferrari began his automobile career as a test-driver for a car manufacturer that rebuilt secondhand truck bodies into small passenger cars. He managed to rise from this position to become a race car driver, making his competitive debut in 1919. He then joined Alfa Romeo in 1920, winning his first Grand Prix at Ravenna in 1923.
-
-After the deaths of fellow drivers Ugo Sivocci and Antonio Ascari, and with the birth of his son Alfredo, Ferrari retired from racing and shift to management and development within Alfa Romeo. This position allowed him to build a team of drivers, including Giuseppe Campari and Tazio Nuvolari, with which he founded the Scuderia Ferrari team at Alfa Romeo.
-
-Ferrari ultimately founded Ferrari S.p.A in 1947 after leaving Alfa Romeo and starting his own automobile parts company. He then took his new machines back to the racetrack, determined to compete against Alfa Romeo and Mercedes. Success came at least when José Froilán González won at Silverstone in 1951.
-         </p>
-     </section>
+      
+      <header>Control Statements</header>
     
-       <section class="main-section" id="reference">
-      <header> Reference</header>
-      <p> 
-        <ul> <li> All the documentation in this page is taken from <a href="https://www.onthisday.com/" class="referral-link"> On This Day </a></li> </ul>
+      <p>  
+        <b>Examples</b>
         </p>
-    </section> -->
+   
+         <code>name = 'Joe'</code><br>
+        <code>if name == 'Joe':</code><br>
+        <code>print('Hello joe')</code><br>
+  
+        <br>
+
+        <code>age=25</code><br>
+        <code>print ("age: ", age)</code><br>
+        <code>if age >=18:</code><br>
+        <code>print ("eligible to vote")</code><br>
+        <code>else:</code><br>
+        <code>print ("not eligible to vote")</code><br>
+
+
+
+        <br>
+
+
+        <code>a = 33</code><br>
+        <code>b = 33</code><br>
+        <code>if b > a:</code><br>
+        <code>print("b is greater than a")</code><br>
+        <code>elif a == b:</code><br>
+        <code>print("a and b are equal")</code><br>
+
+
+
+        <br>
+
+
+
+        <code>x = 30</code><br>
+        <code>y = 10</code><br>
+        <code>if x >= y:</code><br>
+        <code>print("x is greater than or equals to y")</code><br>
+        <code>if x == y:</code><br>
+        <code>print("x is equals to y")</code><br>
+        <code> else:</code><br>
+        <code>print("x is greater than y")</code><br>
+        <code>else:</code><br>
+        <code>print("x is less than y")</code><br>
+
+
+        <br>
+        <div class="container">
+          <h1>Online Python Compiler</h1>
+          <textarea id="code" placeholder="Write your Python code here..."></textarea>
+          <button  class="but" id="runBtn">Run Code</button>
+          <div id="output"></div>
+          <div id="error"></div>
+          </div>
+
+<br>
+          
+  
+      <header>User Input Control</header>
+    
+          <p>  
+            <b>Examples</b>
+            </p>
+       
+             <code>age = int(input("Enter your age :"))</code><br>
+            <code>if age < 18 :</code><br>
+            <code>print("You are not eligible to vote")</code><br>
+            
+
+ 
+    
+    
+            <br>
+
+            <code>age = int(input('Enter your age in years: '))</code><br>
+            <code>if age > 18 :</code><br>
+            <code>print('Welcome aboard.')</code><br>
+            <code>else:</code><br>
+            <code>print('You do not meet the requirements to ride.')</code><br>
+
+
+            <br>
+
+            <code>temp = int(input("Enter a Temperature :"))</code><br>
+            <code>if temp < 100:</code><br>
+            <code>if temp  == 50:</code><br>
+            <code>print("Temperature is normal")</code><br>
+            <code>else:</code><br>
+            <code>print("Temperature is low")</code><br>
+            <code>else:</code><br>
+            <code>print("Temperature is high")</code><br>
+
+
+
+            <br>
+
+            <code>mark = int(input("Enter your mark :"))</code><br>
+            <code>if mark > 80:</code><br>
+            <code>print("Pass")</code><br>
+            <code>elif mark >= 35:</code><br>
+            <code>print("Just pass")</code><br>
+            <code>else:</code><br>
+            <code>print("Fail")</code><br>
+
+            <br>
+
+            <div class="container">
+              <h1>Online Python Compiler</h1>
+              <textarea id="code" placeholder="Write your Python code here..."></textarea>
+              <button  class="but" id="runBtn">Run Code</button>
+              <div id="output"></div>
+              <div id="error"></div>
+              </div>
+
+
+
+    </section>
 
     
   </main>
@@ -361,6 +667,37 @@ Ferrari ultimately founded Ferrari S.p.A in 1947 after leaving Alfa Romeo and st
         document.body.scrollTop = 0; // For Safari
         document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
     }
+</script>
+
+<script>
+  function runPythonCode() {
+      const code = document.getElementById('code').value;
+      const outputDiv = document.getElementById('output');
+      const errorDiv = document.getElementById('error');
+
+      outputDiv.innerText = '';
+      errorDiv.innerText = '';
+
+      Sk.configure({
+          output: function(text) { outputDiv.innerText += text; },
+          read: function(x) { 
+              if (Sk.builtinFiles === undefined || Sk.builtinFiles["files"][x] === undefined) {
+                  throw "File not found: '" + x + "'";
+              }
+              return Sk.builtinFiles["files"][x];
+          }
+      });
+
+      Sk.misceval.asyncToPromise(function() {
+          return Sk.importMainWithBody("<stdin>", false, code, true);
+      }).then(function(mod) {
+          // Code executed successfully
+      }, function(err) {
+          errorDiv.innerText = err.toString();
+      });
+  }
+
+  document.getElementById('runBtn').onclick = runPythonCode;
 </script>
   
 </body>
